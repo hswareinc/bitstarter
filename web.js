@@ -8,7 +8,7 @@ buf = fs.readFileSync(infile);
 var app = express.createServer(express.logger());
 
 app.get('/', function(request, response) {
-  response.send(buf);
+  response.send(buf.toString);
 });
 
 var port = process.env.PORT || 5000;
