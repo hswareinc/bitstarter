@@ -1,10 +1,10 @@
-var fs = require('fs');
-var infile = "hello.txt";
-var buf = new Buffer(256);
+# var fs = require('fs');
+# var infile = "hello.txt";
+# var buf = new Buffer(256);
 var express = require('express');
 var app = express.createServer(express.logger());
 
-buf = fs.readFileSync(infile);
+# buf = fs.readFileSync(infile);
 
 app.get('/', function(request, response) {
   response.send('Hello from buffer ');
